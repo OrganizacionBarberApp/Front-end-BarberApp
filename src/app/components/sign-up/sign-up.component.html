@@ -1,1 +1,94 @@
-<p>sign-up works!</p>
+<div class="body">
+    <div class="center">
+        <h1>Registro de usuario</h1>
+        <form method="post ">
+          <div class="txt_field">
+            <input
+              type="text"
+              name="nickname"
+              autocomplete="off"
+              required
+            />
+            <span></span>
+            <label for="">Nombre</label>
+          </div>
+  
+          <div class="txt_field">
+            <input
+              type="date"
+              name="age"
+              autocomplete="off"
+              required
+              class="input_edit"
+            />
+            <span></span>
+            <label for=""></label>
+          </div>
+  
+          <div class="txt_field">
+            <input
+              type="text"
+              name="city"
+              autocomplete="off"
+              required
+            />
+            <span></span>
+            <label for="">Ciudad</label>
+          </div>
+  
+          <div class="txt_field">
+            <input
+              type="text"
+              name="cellphone"
+              autocomplete="off"
+              required
+              minlength="10"
+            />
+            <span></span>
+            <label for="">Telefono</label>
+          </div>
+  
+          <div class="txt_field">
+            <input
+              type="text "
+              name="email"
+              autocomplete="off"
+              autofocus
+              required
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            />
+            <span></span>
+            <label for="">Correo</label>
+          </div>
+  
+          <div class="txt_field">
+            <input
+              type="password"
+              name="constraseña"
+              autocomplete="off"
+              required
+            />
+  
+            <label for="">Contraseña</label>
+          </div>
+          <div class="terminos">
+            <a [routerLink]="['/Terms-and-Conditions']" target="_blank"
+              ><label for=""
+                ><input type="checkbox" name="type" requiredTrue />
+                <p>Terminos y Condiciones</p></label
+              ></a
+            >
+          </div>
+  
+          <div class="container-home-next">
+            <button>
+              <a>Registrarse </a>
+            </button>
+          </div>
+  
+          <div class="link">
+            <a [routerLink]="['/']">Regresar</a>
+          </div>
+        </form>
+      </div>
+</div>

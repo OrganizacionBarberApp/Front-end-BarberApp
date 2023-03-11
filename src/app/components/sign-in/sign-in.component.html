@@ -1,1 +1,33 @@
-<p>sign-in works!</p>
+<div class="body">
+    <div class="center">
+        <h1>Iniciar sesion</h1>
+        <form method="post " >
+      
+          <div class="txt_field">
+            <input type="text " name="email" autocomplete="off" autofocus required  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+            <span></span>
+            <label for="">Correo</label>
+          </div>
+     
+          
+          <div class="txt_field">
+            <input type="password" name="constraseña" autocomplete="off" required  >
+       
+            <label for="">Contraseña</label>
+          </div>
+          <div class="pass"><a [routerLink]="['/recover-password']" >Olvidaste tu contraseña?</a></div>
+          <input type="submit"  value="Iniciar sesion" >
+          <div class="signup_link">
+            ¿No tienes una cuenta? 
+            <a  [routerLink]="['/sign-up']" >Registrate</a>
+          </div>
+    
+          <div class="link_devolver">
+            <a [routerLink]="['/']">Regresar</a>
+          </div>
+          
+        </form>
+      
+      </div>
+
+</div>
