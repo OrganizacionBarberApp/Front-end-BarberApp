@@ -11,6 +11,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { RecoverPasswordComponent } from './components/recover-password/recover-password.component';
 import { NewPasswordComponent } from './components/new-password/new-password.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TermsAndConditionsComponent } from './components/terms-and-conditions/terms-and-conditions.component';
 
 
   const appRoutes: Routes = [
@@ -20,6 +21,7 @@ import { HeaderComponent } from './components/header/header.component';
     {path:'recover-password',component:RecoverPasswordComponent},
     {path:'new-password',component:NewPasswordComponent},
     {path:'Header',component:HeaderComponent},
+    {path:'Terms-and-Conditions',component:TermsAndConditionsComponent},
 
     
   ]
@@ -32,7 +34,8 @@ import { HeaderComponent } from './components/header/header.component';
     SignUpComponent,
     RecoverPasswordComponent,
     NewPasswordComponent,
-    HeaderComponent
+    HeaderComponent,
+    TermsAndConditionsComponent
   ],
   imports: [
     BrowserModule,
